@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welhome — Gerenciar Imóveiss</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="img/cljdekwz68ln2nchsebf.png" alt="logo">
+
+  </header>
+
+
+  <main>
+    <!-- MODAL -->
+    <div id="propertyModal" class="modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <header class="modal__header">
+          <h2 id="modalTitle">Novo Imóvel</h2>
+          <button class="modal__close" title="Fechar" aria-label="Fechar" data-close>&times;</button>
+        </header>
+
+        <form id="form" class="modal__body">
+          <div>
+            <label>Título <input name="title" required /></label>
+            <label>Endereço <input name="address" required /></label>
+            <label>Status
+              <select name="status">
+                <option value="active">Ativo</option>
+                <option value="inactive">Inativo</option>
+              </select>
+            </label>
+          </div>
+
+          <footer class="modal__footer">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button id="cancelEdit" type="button" class="btn muted" data-close style="display:none">Cancelar
+              edição</button>
+          </footer>
+        </form>
+      </div>
+    </div>
+
+    <!-- LISTA -->
+    <section class="card">
+      <div class="toolbar">
+        <h2>Seus Imóveis</h2>
+        <button class="btn btn-orange" data-open-modal>Adicionar Novo Imóvel</button>
+      </div>
+      
+      <div class="table-responsive">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Título</th>
+              <th>Endereço</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
