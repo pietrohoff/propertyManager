@@ -5,6 +5,12 @@
 > Foco em arquitetura simples, fácil de subir com **Docker** e agradável de desenvolver.
 
 ---
+**Demonstração online:**  
+- [http://137.184.2.244:8080/](http://137.184.2.244:8080/)
+
+**Documentação da API (Swagger):**  
+- [http://137.184.2.244:8000/docs](http://137.184.2.244:8000/docs)
+
 
 ## Sumário
 - [Estrutura de Pastas](#estrutura-de-pastas)
